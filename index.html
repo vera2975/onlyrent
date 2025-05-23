@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Only Rent App</title>
+  <!-- Google Fonts: Roboto (英文), Noto Sans (中文) -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <!-- 主視覺區塊 -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="language-selector">
+              <button id="lang-zh">中文</button>
+              <button id="lang-en">English</button>
+          </div>
+          <div class="text-group">
+              <div class="title" data-i18n="mainTitle"></div>
+              <div class="subtitle" data-i18n="subtitle1"></div>
+              <div class="subtitle-italic" data-i18n="subtitle2"></div>
+          </div>
+          <div class="app-store-buttons">
+              <a href="https://apps.apple.com/" target="_blank">
+                <img src="images/app-store.webp" alt="App Store 下載">
+              </a>
+              <a href="https://play.google.com/store" target="_blank">
+                <img src="images/google-play.webp" alt="Google Play 下載">
+              </a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="image-column">
+            <img class="mockup-image" src="https://placehold.co/509x812?text=1" />
+          </div>
+          <div class="carousel-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 公司介紹區塊 -->
+    <section class="about-section">
+      <img class="logo" src="images/only rent logo.webp" />
+      <div class="about-title zh-font" data-i18n="aboutTitle"></div>
+      <div class="about-desc zh-font" data-i18n="aboutDesc"></div>
+    </section>
+  </div>
+
+  <!-- 聯絡資訊 -->
+  <section class="contact-section">
+    <div class="contact-content">
+      <div class="contact-block">
+        <div class="contact-text zh-font" data-i18n="contactTW1"></div>
+        <div class="contact-text zh-font" data-i18n="contactTW2"></div>
+        <div class="contact-text zh-font" data-i18n="contactTW3"></div>
+        <div class="contact-text zh-font" data-i18n="contactTW4"></div>
+      </div>
+      <div class="contact-line"></div>
+      <div class="contact-block">
+        <div class="contact-text en-font" data-i18n="contactSG1"></div>
+        <div class="contact-text en-font" data-i18n="contactSG2"></div>
+        <div class="contact-text en-font" data-i18n="contactSG3"></div>
+        <div class="contact-text en-font" data-i18n="contactSG4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-text en-font" data-i18n="copyright"></div>
+    <div class="footer-text-group">
+      <span class="footer-link" id="footer-toggle" data-i18n="footerToggle"></span>
+    </div>
+    <div class="footer-expand" id="footer-content">
+      <div class="footer-expand-inner">
+        <div class="footer-expand-text" data-i18n="footerContent"></div>
+        <div class="footer-expand-close" id="footer-close" data-i18n="footerClose"></div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
